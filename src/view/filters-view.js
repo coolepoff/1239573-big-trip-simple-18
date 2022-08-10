@@ -16,7 +16,7 @@ const createFiltersTemplate = () => (
   </form>`
 );
 
-export default class FilterView {
+export default class FiltersView {
   getTemplate() {
     return createFiltersTemplate();
   }
