@@ -4,15 +4,15 @@ import SortView from '../view/sort-view.js';
 import FormEditView from '../view/form-edit-fiew.js';
 import {render} from '../render.js';
 
-export default class TripListPresenter {
+export default class TripEventsPresenter {
 
   waypointListComponent = new WaypointListView();
 
-  init = (pageContainer) => {
-    this.pageContainer = pageContainer;
+  init = (blockContainer) => {
+    this.blockContainer = blockContainer;
 
-    render(new SortView(), this.pageContainer);
-    render(this.waypointListComponent, this.pageContainer);
+    render(new SortView(), this.blockContainer);
+    render(this.waypointListComponent, this.blockContainer);
     render(new FormEditView(), this.waypointListComponent.getElement());
 
     for (let i = 0; i < 3; i++) {
