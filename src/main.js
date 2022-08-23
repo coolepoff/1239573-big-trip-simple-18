@@ -3,9 +3,9 @@ import {render} from './render.js';
 import WaypointPresenter from './presenter/waypoint-presenter.js';
 
 const filtersElement = document.querySelector('.trip-controls__filters');
-const tripEventsElement = document.querySelector('.trip-events');
+const eventsElement = document.querySelector('.trip-events');
 
-const pagePresenter = new WaypointPresenter();
+const waypointPresenter = new WaypointPresenter();
 
 render(new FiltersView(), filtersElement);
-pagePresenter.init(tripEventsElement);
+waypointPresenter.init(eventsElement);

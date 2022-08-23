@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "cjs-module": "^1.5.0",
-    "dayjs": "1.11.1"
+    "dayjs": "1.11.1",
+    "flatpickr": "4.6.13",
+    "he": "1.2.0"
   }
 }

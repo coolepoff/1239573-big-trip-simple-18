@@ -31,7 +31,6 @@ export default class WaypointPresenter {
           this.pointsModel.getDestination(this.points[i])
         ), this.waypointListComponent.getElement()
       );
-      // render(new WaypointItemView(), this.waypointListComponent.getElement());
     }
 
   };

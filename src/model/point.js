@@ -15,7 +15,9 @@ export default class PointModel {
     this.offers.find((offer) => offer.id === offerId)
   );
 
-  getDestination = (point) => {
-    return this.destination.find((destination) => point.destination === destination.id)
-  }
+  getDestination = (point) =>
+    this.destination.find((destination) => point.destination === destination.id);
+  // getDestination = (point) => {
+  //   return this.destination.find((destination) => point.destination === destination.id)
+  // }
 }
