@@ -46,7 +46,7 @@ const getDescrText = () => {
   for (let i = 0; i <= getRandomInteger(1, COUNT_DESTINATIONS_DESCRIPTION); i++) {
     fullDescr.push(getRandomArrayElement(DESCRIPTIONS));
   }
-  return fullDescr.join(' ');
+  return fullDescr.join('. ');
 };
 
 export {WAYPOINT_COUNT, OFFERS_TYPE, DESTINATIONS_NAME, getDescrText, OFFERS_OPTIONS};
